@@ -36,7 +36,7 @@ SPDX-License-Identifier: MIT
 <li>Spectator List</li>
 <li>Styling</li>
 <li>Configuration</li>
-<li><i>...and more to come!</i></li>
+<li><i>...and more!</i></li>
 
 <h2>💬 Q&A:</h2>
 <h4><b>🤔  Does it work in fullscreen?</b></h4>
