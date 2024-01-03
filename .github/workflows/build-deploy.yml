@@ -1,4 +1,4 @@
-# Copyright (c) 2023 Snipcola
+# Copyright (c) 2023 Snipcola - Nightstar <nightstar6@protonmail.com>
 # SPDX-License-Identifier: MIT
 
 name: Build and deploy software
@@ -30,14 +30,14 @@ jobs:
             rm -r -fo ./bin
           }
           mkdir ./bin
-          move ./build/x86_64-pc-windows-msvc/release/proext.exe ./bin
+          move ./build/x86_64-pc-windows-msvc/release/nvext.exe ./bin
       - name: Save hash
         run: |
-          $(CertUtil -hashfile ./bin/proext.exe MD5)[1] -replace " ","" > ./bin/hash.txt
+          $(CertUtil -hashfile ./bin/nvext.exe MD5)[1] -replace " ","" > ./bin/hash.txt
       - name: Commit and push
         run: |
-          git config --global user.name "Snipcola"
-          git config --global user.email "63375371+snipcola@users.noreply.github.com"
+          git config --global user.name "nightstar999"
+          git config --global user.email "nightstar6@protonmail.com"
           git add ./bin -f
           git commit -m "📦 Updated Binaries"
           git push -f
