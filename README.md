@@ -1,5 +1,5 @@
 <!--
-Copyright (c) 2023 Snipcola
+Copyright (c) 2023 Snipcola - Nightstar <nightstar6@protonmail.com>
 SPDX-License-Identifier: MIT
 -->
 
@@ -19,9 +19,11 @@ SPDX-License-Identifier: MIT
     <img src="https://img.shields.io/github/commit-activity/t/snipcola/proext?style=for-the-badge&logo=github&color=3380F5"/>
 </div>
 
-<p align="center">An open-source, customizable modification for Counter-Strike 2, designed to enhance your gameplay.</p>
+<p align="center">
+    Fork of ProExt by Snipcola, maintained by Nightstar.<br/>
+    No new feature(s) is planned. 
+</p>
 
-<img src="./assets/showcase.png"/>
 
 <h2>📋 Features:</h2>
 <li>ESP</li>
@@ -42,6 +44,9 @@ SPDX-License-Identifier: MIT
 
 <h4><b>🤔  Is this detectable?</b></h4>
 <p>This software operates in user mode, so it is entirely possible to be detected. However, you should always avoid suspicious gameplay to evade potential reports.</p>
+
+<h4><b>🤔  How to open the menu?</b></h4>
+<code>Insert</code>
 
 <h4><b>🤔  Menu is laggy when toggling, any way to fix?</b></h4>
 <p>Yes, enable developer console and run the following:</p>
