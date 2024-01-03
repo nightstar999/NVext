@@ -1,4 +1,4 @@
-// Copyright (c) 2023 Snipcola
+// Copyright (c) 2023 Snipcola - Nightstar <nightstar6@protonmail.com>
 // SPDX-License-Identifier: MIT
 
 #![allow(non_snake_case, non_upper_case_globals)]
@@ -28,17 +28,17 @@ pub mod Offsets {
     }
 
     pub mod C_CSPlayerPawnBase { // C_BasePlayerPawn
-        pub const m_vecLastClipCameraPos: usize = 0x128C; // Vector
-        pub const m_angEyeAngles: usize = 0x1510; // QAngle
-        pub const m_pClippingWeapon: usize = 0x12A8; // C_CSWeaponBase*
-        pub const m_iIDEntIndex: usize = 0x153C; // CEntityIndex
-        pub const m_entitySpottedState: usize = 0x1630; // EntitySpottedState_t
-        pub const m_ArmorValue: usize = 0x1508; // int32_t
-        pub const m_iShotsFired: usize = 0x1418; // int32_t
+        pub const m_vecLastClipCameraPos: usize = 0x1294; // Vector
+        pub const m_angEyeAngles: usize = 0x1518; // QAngle
+        pub const m_pClippingWeapon: usize = 0x12B0; // C_CSWeaponBase*
+        pub const m_iIDEntIndex: usize = 0x1544; // CEntityIndex
+        pub const m_entitySpottedState: usize = 0x1638; // EntitySpottedState_t
+        pub const m_ArmorValue: usize = 0x1510; // int32_t
+        pub const m_iShotsFired: usize = 0x1420; // int32_t
     }
 
     pub mod C_CSPlayerPawn { // C_CSPlayerPawnBase
-        pub const m_aimPunchCache: usize = 0x1738; // CUtlVector<QAngle>
+        pub const m_aimPunchCache: usize = 0x1740; // CUtlVector<QAngle>
     }
 
     pub mod CGameSceneNode {
@@ -75,7 +75,8 @@ pub mod Offsets {
 }
 
 pub mod Signatures {
-    pub const dwEntityList: &str = "48 8B 0D ?? ?? ?? ?? 48 89 7C 24 ?? 8B FA C1";
+    // https://github.com/a2x/cs2-dumper/blob/main/config.json //
+    pub const dwEntityList: &str = "48 8B 0D ?? ?? ?? ?? 48 89 7C 24 ?? 8B FA C1 EB";
     pub const dwLocalPlayerController: &str = "48 8B 05 ?? ?? ?? ?? 48 85 C0 74 4F";
     pub const dwLocalPlayerPawn: &str = "48 8D 05 ?? ?? ?? ?? C3 CC CC CC CC CC CC CC CC 48 83 EC ?? 8B 0D";
     pub const dwPlantedC4: &str = "48 8B 15 ?? ?? ?? ?? FF C0 48 8D 4C 24 40";
@@ -85,9 +86,9 @@ pub mod Signatures {
 
 pub mod ProgramConfig {
     pub mod Package {
-        pub const Name: &str = "ProExt";
-        pub const Description: &str = "An open-source, external CS2 cheat.";
-        pub const Executable: &str = "proext.exe";
+        pub const Name: &str = "nvext";
+        pub const Description: &str = "An open-source, external CS2 enhancer.";
+        pub const Executable: &str = "nvext.exe";
         pub const Version: &str = env!("CARGO_PKG_VERSION");
         pub const Authors: &str = &env!("CARGO_PKG_AUTHORS");
     }
@@ -115,9 +116,9 @@ pub mod ProgramConfig {
     }
 
     pub mod Links {
-        pub const Source: &str = "https://github.com/snipcola/ProExt";
-        pub const License: &str = "https://raw.githubusercontent.com/snipcola/ProExt/main/LICENSE";
-        pub const Discord: &str = "https://discord.gg/8t2vNHMJW6";
+        pub const Source: &str = "https://github.com/nightstar999/NVext";
+        pub const License: &str = "https://raw.githubusercontent.com/nightstar999/NVext/main/LICENSE";
+        pub const Discord: &str = "https://discord.gg/8t2vNHMJW6"; // Original author discord, snipcola
     }
 
     pub mod Keys {
