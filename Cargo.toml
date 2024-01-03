@@ -1,10 +1,10 @@
-# Copyright (c) 2023 Snipcola
+# Copyright (c) 2023 Snipcola - Nightstar <nightstar6@protonmail.com>
 # SPDX-License-Identifier: MIT
 
 [package]
-name = "proext"
-version = "0.0.5"
-authors = ["Snipcola"]
+name = "NVext"
+version = "24.1.1"
+authors = ["Snipcola", "nightstar"]
 edition = "2021"
 license = "MIT"
 
