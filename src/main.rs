@@ -1,4 +1,4 @@
-// Copyright (c) 2023 Snipcola
+// Copyright (c) 2023 Snipcola - Nightstar <nightstar6@protonmail.com>
 // SPDX-License-Identifier: MIT
 
 #![cfg_attr(all(target_os = "windows", not(debug_assertions)), windows_subsystem = "windows")]
